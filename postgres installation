@@ -1,0 +1,49 @@
+https://computingforgeeks.com/installing-postgresql-database-server-on-ubuntu/
+
+installation postgressql
+
+
+CONNECT TO PSQL
+sudo -i -u postgres
+su postgres 
+or 
+su -i postgres
+psql
+\conninfo
+sudo -i -u postgres psql
+python /usr/lib/python2.7/site-packages/pgadmin4-web/setup.py
+follow:-
+https://phoenixnap.com/kb/how-to-connect-postgresql-database-command-line
+
+
+
+
+
+
+The basic syntax of CREATE DATABASE statement is as follows −
+
+CREATE DATABASE dbname;
+
+where dbname is the name of a database to create.
+Example
+
+The following is a simple example, which will create testdb in your PostgreSQL schema
+
+postgres=# CREATE DATABASE testdb;
+postgres-# 
+
+Using createdb Command
+
+PostgreSQL command line executable createdb is a wrapper around the SQL command CREATE DATABASE. The only difference between this command and SQL command CREATE DATABASE is that the former can be directly run from the command line and it allows a comment to be added into the database, all in one command.
+Syntax
+
+The syntax for createdb is as shown below −
+createdb [option...] [dbname [description]]
+
+
+
+createdb -h localhost -p 5432 -U postgres testdb
+password
+
+
+

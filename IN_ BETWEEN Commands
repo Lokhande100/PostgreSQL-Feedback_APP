@@ -1,0 +1,38 @@
+SELECT * FROM person OFFSET 5 LIMIT 5..................it starts from 6
+
+same as
+SELECT * FROM person OFFSET 5 FETCH FIRST 5 ROW ONLY
+
+SELECT * FROM person WHERE country_of_birth='China'
+SELECT * FROM person WHERE country_of_birth='France' OR country_of_birth='Brazil'
+
+USE  'IN '  keyword
+
+SELECT *
+FROM person
+WHERE country_of_birth IN('China','FRance','Barazil')
+
+
+SELECT *
+FROM person
+WHERE country_of_birth IN('China','FRance','Barazil')
+orderby country_of_birth ;
+
+
+
+SELECT *
+FROM person
+WHERE date of birth
+BETWEEN DATE '2000-01-01' AND '2015-01-01'
+
+
+LIKE Operator(Patterns finding)
+
+SELECT *
+FROM person
+WHERE email like '%.com'
+WHERE email like '%bloomberg.com'
+
+
+
+
