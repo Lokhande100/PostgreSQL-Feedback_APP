@@ -1,0 +1,17 @@
+Coalesce (To remove blank spaces, null values)
+
+SELECT COALESCE(1);
+OUTPUT:-1
+
+SELECT COALESCE(1) AS number;
+output=1
+
+
+SELECT COALESCE(null, null,1) AS number;
+output=1
+
+
+
+SELECT COALESCE(email, 'Email not provided') FROM Person;
+
+(Blank space will filled with 'email not provided')

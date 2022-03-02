@@ -1,0 +1,16 @@
+Null if 
+
+
+SELECT 10/ NULL;
+ouput=-- no error generated
+
+SELECT 10 / NULLIF(2,9);
+output= 5
+
+
+SELECT 10 / NULLIF(0,0);
+output= no error
+
+
+SELECT COALESECE(10/nullif(0,0),0);
+output =0
